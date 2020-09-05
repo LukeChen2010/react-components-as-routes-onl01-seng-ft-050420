@@ -36,3 +36,12 @@ const Login = () => {
     </div>
   );
 };
+
+ReactDOM.render((
+  <Router>
+      <Route path="/" component={Home} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/login" component={Login} />
+  </Router>),
+  document.getElementById('root')
+);
